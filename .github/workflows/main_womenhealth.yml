@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'WomenHealth'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_88B9102FAB4B477DA0F5B8C875C76F1F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_778711AB764F4FE7B61771F062C20F01 }}
