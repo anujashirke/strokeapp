@@ -354,7 +354,7 @@
                <p>© 2022 Women Health Monitor by CG Millennial Garage <a href="http://www.capgemini.com/"> <strong>Capgemini !!</strong></a></p>
             </div>
          </div>
-       </footr> 
+       
        
       <!-- end footer -->
       <!-- Javascript files--> 
@@ -369,5 +369,22 @@
       <script src="/static/js/fancybox.js"></script>
       <script src="/static/js1/main.js"></script>
       
+      <script>
+         $(document).ready(function(){
+         $(".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         });
+         
+         $(".zoom").hover(function(){
+         
+         $(this).addClass('transition');
+         }, function(){
+         
+         $(this).removeClass('transition');
+         });
+         });
+         
+      </script> 
    </body>
 </html>
