@@ -10,24 +10,27 @@ model = pickle.load(open('Stroke.pkl', 'rb'))
 
 @app.route('/',methods=['GET'])
 def Home():
-    return render_template('output.html')
+    return render_template('Home.html')
 
 @app.route('/stroke',methods=['GET'])
 def Stroke():
-    return render_template('index.html')
+    return render_template('stroke.html')
 
 @app.route('/explore',methods=['GET'])
 def explore():
     return render_template('explore.html')
+    
 @app.route('/result',methods=['GET'])
 def result():
     return render_template('result.html')
+
 @app.route('/result1',methods=['GET'])
 def result1():
-    return render_template('explore1.html')
+    return render_template('result1.html')
+
 @app.route('/yoga',methods=['GET'])
 def yoga():
-    return render_template('index1.html')
+    return render_template('yoga.html')
 
 @app.route("/predict", methods=['POST'])
 def predict():
